@@ -1,0 +1,6 @@
+name: Starter Workflow
+on: [workflow_dispatch, push, pull_request]
+
+jobs:
+  call-create-github-release-workflow:
+    uses: fiddlermikey/my-actions/.github/workflows/github-release.yml@main
